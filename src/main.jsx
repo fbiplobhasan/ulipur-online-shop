@@ -14,7 +14,7 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <div className="poppins-font max-w-7xl mx-auto">
+      <div className="poppins-font max-w-7xl mx-auto bg-slate-400-50">
         <RouterProvider router={router} />
       </div>
     </QueryClientProvider>
