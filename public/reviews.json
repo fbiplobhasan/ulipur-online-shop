@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Apple iPhone 15 Pro",
+    "category": "Phone",
+    "price": 1200,
+    "stock": 15,
+    "rating": 5,
+    "description": "The latest iPhone with A17 Pro chip, 6.1-inch Super Retina XDR display, and titanium design.",
+    "image": "https://example.com/images/iphone15pro.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "Phone",
+    "price": 1100,
+    "stock": 10,
+    "rating": 4,
+    "description": "Powerful Android smartphone with Snapdragon 8 Gen 3, 200MP camera, and AMOLED 6.8-inch display.",
+    "image": "https://example.com/images/galaxys24ultra.jpg"
+  },
+  {
+    "id": "3",
+    "name": "MacBook Air M3",
+    "category": "Laptop",
+    "price": 1500,
+    "stock": 8,
+    "rating": 5,
+    "description": "Lightweight laptop with Apple M3 chip, 13-inch Retina display, and all-day battery life.",
+    "image": "https://example.com/images/macbookairm3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Dell XPS 13 Plus",
+    "category": "Laptop",
+    "price": 1400,
+    "stock": 12,
+    "rating": 4,
+    "description": "Premium ultrabook with Intel Core i7, 16GB RAM, and InfinityEdge display.",
+    "image": "https://example.com/images/dellxps13.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Sony WH-1000XM5",
+    "category": "Accessories",
+    "price": 400,
+    "stock": 25,
+    "rating": 5,
+    "description": "Noise cancelling wireless headphones with industry-leading sound quality and 30 hours battery life.",
+    "image": "https://example.com/images/sonywh1000xm5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Apple Watch Series 9",
+    "category": "Smart Watch",
+    "price": 500,
+    "stock": 20,
+    "rating": 4,
+    "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and seamless iOS integration.",
+    "image": "https://example.com/images/applewatch9.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Logitech MX Master 3S",
+    "category": "Accessories",
+    "price": 120,
+    "stock": 30,
+    "rating": 5,
+    "description": "Ergonomic wireless mouse with ultra-fast scrolling and customizable buttons.",
+    "image": "https://example.com/images/logitechmxmaster3s.jpg"
+  }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "101",
+        "name": "MacBook Pro 14-inch",
+        "description": "Apple M2 Pro chip with 16GB RAM and 512GB SSD.",
+        "image": "https://i.ibb.co/MBK8Y9n/macbook-pro.jpg",
+        "category": "Laptop",
+        "price": 2200,
+        "brand": "Apple",
+        "rating": 4.8
+    },
+    {
+        "_id": "102",
+        "name": "Dell XPS 13",
+        "description": "13-inch laptop with Intel Core i7, 16GB RAM, and 1TB SSD.",
+        "image": "https://i.ibb.co/6m5YZBf/dell-xps.jpg",
+        "category": "Laptop",
+        "price": 1500,
+        "brand": "Dell",
+        "rating": 4.6
+    },
+    {
+        "_id": "103",
+        "name": "iPhone 15 Pro Max",
+        "description": "Apple A17 Pro chip, 256GB storage, and titanium design.",
+        "image": "https://i.ibb.co/0jvFzB7/iphone15.jpg",
+        "category": "Phone",
+        "price": 1300,
+        "brand": "Apple",
+        "rating": 4.9
+    },
+    {
+        "_id": "104",
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "200MP camera, Snapdragon 8 Gen 3, and 5000mAh battery.",
+        "image": "https://i.ibb.co/KsNmY0P/galaxy-s24.jpg",
+        "category": "Phone",
+        "price": 1200,
+        "brand": "Samsung",
+        "rating": 4.7
+    },
+    {
+        "_id": "105",
+        "name": "Sony WH-1000XM5",
+        "description": "Wireless Noise Cancelling Over-Ear Headphones.",
+        "image": "https://i.ibb.co/VQd1d3m/sony-headphones.jpg",
+        "category": "Accessories",
+        "price": 400,
+        "brand": "Sony",
+        "rating": 4.8
+    },
+    {
+        "_id": "106",
+        "name": "Apple Watch Series 9",
+        "description": "Smartwatch with advanced health tracking features.",
+        "image": "https://i.ibb.co/wzN5Yrk/apple-watch.jpg",
+        "category": "Smart Watch",
+        "price": 499,
+        "brand": "Apple",
+        "rating": 4.7
+    },
+    {
+        "_id": "107",
+        "name": "iPad Pro 12.9",
+        "description": "Apple M2 chip, Liquid Retina XDR display, and 1TB storage.",
+        "image": "https://i.ibb.co/ZmY9vVg/ipad-pro.jpg",
+        "category": "Tablet",
+        "price": 1800,
+        "brand": "Apple",
+        "rating": 4.8
+    },
+    {
+        "_id": "108",
+        "name": "Logitech MX Master 3S",
+        "description": "Advanced wireless mouse with ultra-fast scrolling.",
+        "image": "https://i.ibb.co/j4HhX9N/logitech-mx.jpg",
+        "category": "Accessories",
+        "price": 120,
+        "brand": "Logitech",
+        "rating": 4.6
+    }
+]
