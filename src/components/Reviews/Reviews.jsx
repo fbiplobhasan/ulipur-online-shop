@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { FaStar } from "react-icons/fa";
-import { SwiperSlide,Swiper } from "swiper/react";
+import { SwiperSlide, Swiper } from "swiper/react";
 
 
 // Swiper styles import
@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useEffect } from "react";
 
 const Reviews = () => {
   const { data: reviews = [], isLoading } = useQuery({
@@ -19,14 +20,17 @@ const Reviews = () => {
     },
   });
 
+
   if (isLoading) return <p className="text-center py-10">Loading....</p>;
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Section Title */}
-      <h2 className="text-3xl font-bold text-center mb-8">
-        What Our Customers Say
-      </h2>
+      <div className="">
+        <h2 className="text-3xl font-bold text-center mb-8">
+          What Our Customers Say
+        </h2>
+      </div>
 
       {/* Swiper Carousel */}
       <Swiper
@@ -43,7 +47,7 @@ const Reviews = () => {
       >
         {reviews.map((review) => (
           <SwiperSlide key={review._id}>
-            <div className="bg-white shadow-lg rounded-2xl p-6 h-full flex flex-col justify-between hover:shadow-xl transition">
+            <div className="bg-white shadow-lg rounded-2xl p-6 h-full flex flex-col justify-between hover:shadow-xl transition items-center ">
               {/* Name */}
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {review.name}

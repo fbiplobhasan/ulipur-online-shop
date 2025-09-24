@@ -16,10 +16,15 @@ const Products = () => {
   if (isLoading) return <p>Loading....</p>;
 
   return (
-    <div className="px-6 md:px-12 lg:px-20 py-12 bg-gray-50">
+    <div
+      data-aos="fade-down"
+      data-aos-delay="500"
+      data-aos-duration="1000"
+      className="px-6 md:px-12 lg:px-20 py-12"
+    >
       {/* Section Header */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h1 className="text-3xl md:text-4xl font-bold">
           Our <span className="text-blue-600">Products</span>
         </h1>
         <p className="text-gray-500 mt-3 text-sm md:text-base">
