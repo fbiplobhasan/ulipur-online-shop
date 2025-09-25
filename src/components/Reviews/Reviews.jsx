@@ -1,15 +1,16 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { FaStar } from "react-icons/fa";
 import { SwiperSlide, Swiper } from "swiper/react";
-
+import { FaQuoteLeft } from "react-icons/fa";
 
 // Swiper styles import
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useEffect } from "react";
+import "@smastrom/react-rating/style.css";
+
+// import required modules
+import { Autoplay, Navigation } from "swiper/modules";
+import { Rating } from "@smastrom/react-rating";
 
 const Reviews = () => {
   const { data: reviews = [], isLoading } = useQuery({
@@ -20,58 +21,36 @@ const Reviews = () => {
     },
   });
 
-
   if (isLoading) return <p className="text-center py-10">Loading....</p>;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      {/* Section Title */}
-      <div className="">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          What Our Customers Say
-        </h2>
-      </div>
-
-      {/* Swiper Carousel */}
+    <div className="my-24">
+      <h2 className="text-center text-3xl font-bold">Testimonials!</h2>
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        breakpoints={{
-          768: { slidesPerView: 2 }, // Tablet
-          1024: { slidesPerView: 3 }, // Desktop
+        navigation={true}
+        modules={[Navigation, Autoplay]}
+        autoplay={{
+          delay: 3000, 
+          disableOnInteraction: false, 
         }}
+        className="mySwiper"
       >
-        {reviews.map((review) => (
-          <SwiperSlide key={review._id}>
-            <div className="bg-white shadow-lg rounded-2xl p-6 h-full flex flex-col justify-between hover:shadow-xl transition items-center ">
-              {/* Name */}
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                {review.name}
-              </h3>
-
-              {/* Rating */}
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar
-                    key={i}
-                    className={`${
-                      i < review.rating ? "text-yellow-400" : "text-gray-300"
-                    }`}
-                  />
-                ))}
+        <div>
+          {reviews.map((review, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col items-center m-16">
+                <Rating
+                  style={{ maxWidth: 180 }}
+                  value={review.rating}
+                  readOnly
+                />
+                <FaQuoteLeft className="text-5xl my-3.5" />
+                <p>{review.description}</p>
+                <h3>{review.name}</h3>
               </div>
-
-              {/* Review Text */}
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {review.details}
-              </p>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
+        </div>
       </Swiper>
     </div>
   );
