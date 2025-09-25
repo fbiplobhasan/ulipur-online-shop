@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
+import RegisterLottie from '../../assets/Register.json'
+import Lottie from "lottie-react";
 
 const Register = () => {
 
@@ -18,8 +20,12 @@ const Register = () => {
     console.log("Register info:", { name, email, password });
   };
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+    <div className="flex flex-col md:flex-row p-8">
+      <div className="flex-1 max-w-xs md:max-w-md">
+        <Lottie animationData={RegisterLottie}></Lottie>
+      </div>
+      <div className="flex flex-1 items-center justify-center">
+      <div className="w-full max-w-md bg-white rounded-2xl p-8">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Register
         </h2>
@@ -98,6 +104,7 @@ const Register = () => {
           </NavLink>
         </p>
       </div>
+    </div>
     </div>
   );
 };
