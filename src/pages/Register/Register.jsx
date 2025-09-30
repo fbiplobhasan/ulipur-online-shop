@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import RegisterLottie from "../../assets/Register.json";
 import Lottie from "lottie-react";
 import { AuthContext } from "./../../providers/AuthProvider";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import Swal from "sweetalert2";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const axiosPublic = useAxiosPublic();
   const { signUpUser, updateUserProfile } = useContext(AuthContext);
 
   const handleRegister = (e) => {
@@ -24,6 +28,24 @@ const Register = () => {
       updateUserProfile(name, "").then(() => {
         // create user in the database
         console.log("Profile updated successful.");
+        const userInfo = {
+          name,
+          email,
+        };
+        axiosPublic.post("/users", userInfo).then((res) => {
+          if (res.data.insertedId) {
+            console.log("user added to the database.");
+            e.target.reset()
+            Swal.fire({
+              position: "top-left",
+              icon: "success",
+              title: "Registration successful!",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+            navigate("/");
+          }
+        });
       });
     });
 

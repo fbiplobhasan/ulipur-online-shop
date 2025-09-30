@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router";
 import LogoCompo from "../logo/LogoCompo";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
+  const { signInUser, logOut, user } = useContext(AuthContext);
   const navItems = (
     <>
       <li>
@@ -22,6 +24,14 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="navbar h-16 backdrop-blur fixed top-0 left-0 right-0 z-10 bg-blue-500/30 text-blue-500 max-w-7xl mx-auto">
       <div className="navbar-start">
@@ -57,7 +67,15 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1"> {navItems}</ul>
       </div>
       <div className="navbar-end">
-        <NavLink to="/login">Login</NavLink>
+        {user ? (
+          <>
+            <button onClick={handleLogOut}>LogOut</button>
+          </>
+        ) : (
+          <>
+            <NavLink to="/login">Login</NavLink>
+          </>
+        )}
       </div>
     </div>
   );

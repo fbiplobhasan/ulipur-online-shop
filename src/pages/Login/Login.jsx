@@ -1,14 +1,30 @@
-import React from "react";
-import { NavLink } from "react-router";
+import React, { useContext } from "react";
+import { NavLink, useNavigate } from "react-router";
 import LoginLottie from "../../assets/Login.json";
 import Lottie from "lottie-react";
+import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const { signInUser } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log("Login info:", { email, password });
+
+    signInUser(email, password).then((result) => {
+      const user = result.user;
+      Swal.fire({
+        position: "top-left",
+        icon: "success",
+        title: "Login successful.",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      navigate("/");
+    });
   };
 
   return (
