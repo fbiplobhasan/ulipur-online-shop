@@ -1,82 +1,802 @@
 [
-    {
-        "_id": "101",
-        "name": "MacBook Pro 14-inch",
-        "description": "Apple M2 Pro chip with 16GB RAM and 512GB SSD.",
-        "image": "https://i.ibb.co/MBK8Y9n/macbook-pro.jpg",
-        "category": "Laptop",
-        "price": 2200,
-        "brand": "Apple",
-        "rating": 4.8
-    },
-    {
-        "_id": "102",
-        "name": "Dell XPS 13",
-        "description": "13-inch laptop with Intel Core i7, 16GB RAM, and 1TB SSD.",
-        "image": "https://i.ibb.co/6m5YZBf/dell-xps.jpg",
-        "category": "Laptop",
-        "price": 1500,
-        "brand": "Dell",
-        "rating": 4.6
-    },
-    {
-        "_id": "103",
-        "name": "iPhone 15 Pro Max",
-        "description": "Apple A17 Pro chip, 256GB storage, and titanium design.",
-        "image": "https://i.ibb.co/0jvFzB7/iphone15.jpg",
-        "category": "Phone",
-        "price": 1300,
-        "brand": "Apple",
-        "rating": 4.9
-    },
-    {
-        "_id": "104",
-        "name": "Samsung Galaxy S24 Ultra",
-        "description": "200MP camera, Snapdragon 8 Gen 3, and 5000mAh battery.",
-        "image": "https://i.ibb.co/KsNmY0P/galaxy-s24.jpg",
-        "category": "Phone",
-        "price": 1200,
-        "brand": "Samsung",
-        "rating": 4.7
-    },
-    {
-        "_id": "105",
-        "name": "Sony WH-1000XM5",
-        "description": "Wireless Noise Cancelling Over-Ear Headphones.",
-        "image": "https://i.ibb.co/VQd1d3m/sony-headphones.jpg",
-        "category": "Accessories",
-        "price": 400,
-        "brand": "Sony",
-        "rating": 4.8
-    },
-    {
-        "_id": "106",
-        "name": "Apple Watch Series 9",
-        "description": "Smartwatch with advanced health tracking features.",
-        "image": "https://i.ibb.co/wzN5Yrk/apple-watch.jpg",
-        "category": "Smart Watch",
-        "price": 499,
-        "brand": "Apple",
-        "rating": 4.7
-    },
-    {
-        "_id": "107",
-        "name": "iPad Pro 12.9",
-        "description": "Apple M2 chip, Liquid Retina XDR display, and 1TB storage.",
-        "image": "https://i.ibb.co/ZmY9vVg/ipad-pro.jpg",
-        "category": "Tablet",
-        "price": 1800,
-        "brand": "Apple",
-        "rating": 4.8
-    },
-    {
-        "_id": "108",
-        "name": "Logitech MX Master 3S",
-        "description": "Advanced wireless mouse with ultra-fast scrolling.",
-        "image": "https://i.ibb.co/j4HhX9N/logitech-mx.jpg",
-        "category": "Accessories",
-        "price": 120,
-        "brand": "Logitech",
-        "rating": 4.6
-    }
+  {
+    "name": "Garmin Smart Watch Model 1",
+    "category": "Smart Watch",
+    "price": 1449,
+    "stock": 15,
+    "brand": "Garmin",
+    "rating": 4.4,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_1.jpg"
+  },
+  {
+    "name": "Samsung Smart Watch Model 2",
+    "category": "Smart Watch",
+    "price": 1846,
+    "stock": 49,
+    "brand": "Samsung",
+    "rating": 4.8,
+    "details": "High quality smart watch from Samsung with advanced features.",
+    "image": "https://example.com/samsung_smart watch_2.jpg"
+  },
+  {
+    "name": "Dell Laptop Model 3",
+    "category": "Laptop",
+    "price": 585,
+    "stock": 34,
+    "brand": "Dell",
+    "rating": 4.9,
+    "details": "High quality laptop from Dell with advanced features.",
+    "image": "https://example.com/dell_laptop_3.jpg"
+  },
+  {
+    "name": "Apple Phone Model 4",
+    "category": "Phone",
+    "price": 792,
+    "stock": 47,
+    "brand": "Apple",
+    "rating": 4.8,
+    "details": "High quality phone from Apple with advanced features.",
+    "image": "https://example.com/apple_phone_4.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 5",
+    "category": "Laptop",
+    "price": 2404,
+    "stock": 33,
+    "brand": "Apple",
+    "rating": 3.6,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_5.jpg"
+  },
+  {
+    "name": "HP Laptop Model 6",
+    "category": "Laptop",
+    "price": 889,
+    "stock": 33,
+    "brand": "HP",
+    "rating": 3.8,
+    "details": "High quality laptop from HP with advanced features.",
+    "image": "https://example.com/hp_laptop_6.jpg"
+  },
+  {
+    "name": "Apple Phone Model 7",
+    "category": "Phone",
+    "price": 222,
+    "stock": 15,
+    "brand": "Apple",
+    "rating": 4.8,
+    "details": "High quality phone from Apple with advanced features.",
+    "image": "https://example.com/apple_phone_7.jpg"
+  },
+  {
+    "name": "Bose Accessories Model 8",
+    "category": "Accessories",
+    "price": 2181,
+    "stock": 38,
+    "brand": "Bose",
+    "rating": 3.7,
+    "details": "High quality accessories from Bose with advanced features.",
+    "image": "https://example.com/bose_accessories_8.jpg"
+  },
+  {
+    "name": "Amazfit Smart Watch Model 9",
+    "category": "Smart Watch",
+    "price": 2163,
+    "stock": 5,
+    "brand": "Amazfit",
+    "rating": 3.8,
+    "details": "High quality smart watch from Amazfit with advanced features.",
+    "image": "https://example.com/amazfit_smart watch_9.jpg"
+  },
+  {
+    "name": "HP Laptop Model 10",
+    "category": "Laptop",
+    "price": 1827,
+    "stock": 38,
+    "brand": "HP",
+    "rating": 3.8,
+    "details": "High quality laptop from HP with advanced features.",
+    "image": "https://example.com/hp_laptop_10.jpg"
+  },
+  {
+    "name": "Amazfit Smart Watch Model 11",
+    "category": "Smart Watch",
+    "price": 648,
+    "stock": 27,
+    "brand": "Amazfit",
+    "rating": 4.8,
+    "details": "High quality smart watch from Amazfit with advanced features.",
+    "image": "https://example.com/amazfit_smart watch_11.jpg"
+  },
+  {
+    "name": "Bose Accessories Model 12",
+    "category": "Accessories",
+    "price": 1661,
+    "stock": 12,
+    "brand": "Bose",
+    "rating": 4.4,
+    "details": "High quality accessories from Bose with advanced features.",
+    "image": "https://example.com/bose_accessories_12.jpg"
+  },
+  {
+    "name": "Sony Accessories Model 13",
+    "category": "Accessories",
+    "price": 1275,
+    "stock": 7,
+    "brand": "Sony",
+    "rating": 4.2,
+    "details": "High quality accessories from Sony with advanced features.",
+    "image": "https://example.com/sony_accessories_13.jpg"
+  },
+  {
+    "name": "OnePlus Phone Model 14",
+    "category": "Phone",
+    "price": 670,
+    "stock": 7,
+    "brand": "OnePlus",
+    "rating": 3.8,
+    "details": "High quality phone from OnePlus with advanced features.",
+    "image": "https://example.com/oneplus_phone_14.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 15",
+    "category": "Smart Watch",
+    "price": 1390,
+    "stock": 13,
+    "brand": "Garmin",
+    "rating": 3.5,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_15.jpg"
+  },
+  {
+    "name": "Sony Accessories Model 16",
+    "category": "Accessories",
+    "price": 533,
+    "stock": 26,
+    "brand": "Sony",
+    "rating": 4.0,
+    "details": "High quality accessories from Sony with advanced features.",
+    "image": "https://example.com/sony_accessories_16.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 17",
+    "category": "Smart Watch",
+    "price": 684,
+    "stock": 37,
+    "brand": "Garmin",
+    "rating": 4.7,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_17.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 18",
+    "category": "Smart Watch",
+    "price": 2246,
+    "stock": 29,
+    "brand": "Garmin",
+    "rating": 3.7,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_18.jpg"
+  },
+  {
+    "name": "Google Phone Model 19",
+    "category": "Phone",
+    "price": 467,
+    "stock": 12,
+    "brand": "Google",
+    "rating": 4.2,
+    "details": "High quality phone from Google with advanced features.",
+    "image": "https://example.com/google_phone_19.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 20",
+    "category": "Laptop",
+    "price": 1249,
+    "stock": 36,
+    "brand": "Apple",
+    "rating": 4.3,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_20.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 21",
+    "category": "Smart Watch",
+    "price": 640,
+    "stock": 36,
+    "brand": "Garmin",
+    "rating": 4.7,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_21.jpg"
+  },
+  {
+    "name": "Apple Smart Watch Model 22",
+    "category": "Smart Watch",
+    "price": 208,
+    "stock": 19,
+    "brand": "Apple",
+    "rating": 4.1,
+    "details": "High quality smart watch from Apple with advanced features.",
+    "image": "https://example.com/apple_smart watch_22.jpg"
+  },
+  {
+    "name": "Sony Accessories Model 23",
+    "category": "Accessories",
+    "price": 1642,
+    "stock": 31,
+    "brand": "Sony",
+    "rating": 4.2,
+    "details": "High quality accessories from Sony with advanced features.",
+    "image": "https://example.com/sony_accessories_23.jpg"
+  },
+  {
+    "name": "Xiaomi Phone Model 24",
+    "category": "Phone",
+    "price": 801,
+    "stock": 46,
+    "brand": "Xiaomi",
+    "rating": 4.7,
+    "details": "High quality phone from Xiaomi with advanced features.",
+    "image": "https://example.com/xiaomi_phone_24.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 25",
+    "category": "Smart Watch",
+    "price": 1199,
+    "stock": 40,
+    "brand": "Garmin",
+    "rating": 4.5,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_25.jpg"
+  },
+  {
+    "name": "Dell Laptop Model 26",
+    "category": "Laptop",
+    "price": 1834,
+    "stock": 32,
+    "brand": "Dell",
+    "rating": 4.8,
+    "details": "High quality laptop from Dell with advanced features.",
+    "image": "https://example.com/dell_laptop_26.jpg"
+  },
+  {
+    "name": "Google Phone Model 27",
+    "category": "Phone",
+    "price": 515,
+    "stock": 10,
+    "brand": "Google",
+    "rating": 4.6,
+    "details": "High quality phone from Google with advanced features.",
+    "image": "https://example.com/google_phone_27.jpg"
+  },
+  {
+    "name": "MSI Laptop Model 28",
+    "category": "Laptop",
+    "price": 1839,
+    "stock": 21,
+    "brand": "MSI",
+    "rating": 5.0,
+    "details": "High quality laptop from MSI with advanced features.",
+    "image": "https://example.com/msi_laptop_28.jpg"
+  },
+  {
+    "name": "Logitech Accessories Model 29",
+    "category": "Accessories",
+    "price": 1506,
+    "stock": 8,
+    "brand": "Logitech",
+    "rating": 4.5,
+    "details": "High quality accessories from Logitech with advanced features.",
+    "image": "https://example.com/logitech_accessories_29.jpg"
+  },
+  {
+    "name": "Vivo Phone Model 30",
+    "category": "Phone",
+    "price": 96,
+    "stock": 7,
+    "brand": "Vivo",
+    "rating": 3.6,
+    "details": "High quality phone from Vivo with advanced features.",
+    "image": "https://example.com/vivo_phone_30.jpg"
+  },
+  {
+    "name": "Google Phone Model 31",
+    "category": "Phone",
+    "price": 1678,
+    "stock": 5,
+    "brand": "Google",
+    "rating": 5.0,
+    "details": "High quality phone from Google with advanced features.",
+    "image": "https://example.com/google_phone_31.jpg"
+  },
+  {
+    "name": "Samsung Phone Model 32",
+    "category": "Phone",
+    "price": 2070,
+    "stock": 50,
+    "brand": "Samsung",
+    "rating": 4.6,
+    "details": "High quality phone from Samsung with advanced features.",
+    "image": "https://example.com/samsung_phone_32.jpg"
+  },
+  {
+    "name": "Dell Laptop Model 33",
+    "category": "Laptop",
+    "price": 1707,
+    "stock": 26,
+    "brand": "Dell",
+    "rating": 4.6,
+    "details": "High quality laptop from Dell with advanced features.",
+    "image": "https://example.com/dell_laptop_33.jpg"
+  },
+  {
+    "name": "Huawei Smart Watch Model 34",
+    "category": "Smart Watch",
+    "price": 1001,
+    "stock": 23,
+    "brand": "Huawei",
+    "rating": 4.5,
+    "details": "High quality smart watch from Huawei with advanced features.",
+    "image": "https://example.com/huawei_smart watch_34.jpg"
+  },
+  {
+    "name": "Samsung Phone Model 35",
+    "category": "Phone",
+    "price": 1016,
+    "stock": 19,
+    "brand": "Samsung",
+    "rating": 4.9,
+    "details": "High quality phone from Samsung with advanced features.",
+    "image": "https://example.com/samsung_phone_35.jpg"
+  },
+  {
+    "name": "Asus Laptop Model 36",
+    "category": "Laptop",
+    "price": 845,
+    "stock": 30,
+    "brand": "Asus",
+    "rating": 3.5,
+    "details": "High quality laptop from Asus with advanced features.",
+    "image": "https://example.com/asus_laptop_36.jpg"
+  },
+  {
+    "name": "Oppo Phone Model 37",
+    "category": "Phone",
+    "price": 369,
+    "stock": 49,
+    "brand": "Oppo",
+    "rating": 3.9,
+    "details": "High quality phone from Oppo with advanced features.",
+    "image": "https://example.com/oppo_phone_37.jpg"
+  },
+  {
+    "name": "Apple Smart Watch Model 38",
+    "category": "Smart Watch",
+    "price": 2240,
+    "stock": 17,
+    "brand": "Apple",
+    "rating": 3.6,
+    "details": "High quality smart watch from Apple with advanced features.",
+    "image": "https://example.com/apple_smart watch_38.jpg"
+  },
+  {
+    "name": "Kingston Accessories Model 39",
+    "category": "Accessories",
+    "price": 1343,
+    "stock": 46,
+    "brand": "Kingston",
+    "rating": 4.9,
+    "details": "High quality accessories from Kingston with advanced features.",
+    "image": "https://example.com/kingston_accessories_39.jpg"
+  },
+  {
+    "name": "Google Phone Model 40",
+    "category": "Phone",
+    "price": 619,
+    "stock": 37,
+    "brand": "Google",
+    "rating": 4.2,
+    "details": "High quality phone from Google with advanced features.",
+    "image": "https://example.com/google_phone_40.jpg"
+  },
+  {
+    "name": "Anker Accessories Model 41",
+    "category": "Accessories",
+    "price": 814,
+    "stock": 29,
+    "brand": "Anker",
+    "rating": 4.7,
+    "details": "High quality accessories from Anker with advanced features.",
+    "image": "https://example.com/anker_accessories_41.jpg"
+  },
+  {
+    "name": "Fitbit Smart Watch Model 42",
+    "category": "Smart Watch",
+    "price": 206,
+    "stock": 36,
+    "brand": "Fitbit",
+    "rating": 4.2,
+    "details": "High quality smart watch from Fitbit with advanced features.",
+    "image": "https://example.com/fitbit_smart watch_42.jpg"
+  },
+  {
+    "name": "Sandisk Accessories Model 43",
+    "category": "Accessories",
+    "price": 1899,
+    "stock": 41,
+    "brand": "Sandisk",
+    "rating": 4.9,
+    "details": "High quality accessories from Sandisk with advanced features.",
+    "image": "https://example.com/sandisk_accessories_43.jpg"
+  },
+  {
+    "name": "Apple Phone Model 44",
+    "category": "Phone",
+    "price": 645,
+    "stock": 18,
+    "brand": "Apple",
+    "rating": 4.3,
+    "details": "High quality phone from Apple with advanced features.",
+    "image": "https://example.com/apple_phone_44.jpg"
+  },
+  {
+    "name": "MSI Laptop Model 45",
+    "category": "Laptop",
+    "price": 966,
+    "stock": 47,
+    "brand": "MSI",
+    "rating": 4.4,
+    "details": "High quality laptop from MSI with advanced features.",
+    "image": "https://example.com/msi_laptop_45.jpg"
+  },
+  {
+    "name": "Garmin Smart Watch Model 46",
+    "category": "Smart Watch",
+    "price": 2142,
+    "stock": 49,
+    "brand": "Garmin",
+    "rating": 5.0,
+    "details": "High quality smart watch from Garmin with advanced features.",
+    "image": "https://example.com/garmin_smart watch_46.jpg"
+  },
+  {
+    "name": "Kingston Accessories Model 47",
+    "category": "Accessories",
+    "price": 104,
+    "stock": 38,
+    "brand": "Kingston",
+    "rating": 4.5,
+    "details": "High quality accessories from Kingston with advanced features.",
+    "image": "https://example.com/kingston_accessories_47.jpg"
+  },
+  {
+    "name": "HP Laptop Model 48",
+    "category": "Laptop",
+    "price": 625,
+    "stock": 14,
+    "brand": "HP",
+    "rating": 3.6,
+    "details": "High quality laptop from HP with advanced features.",
+    "image": "https://example.com/hp_laptop_48.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 49",
+    "category": "Laptop",
+    "price": 1122,
+    "stock": 7,
+    "brand": "Apple",
+    "rating": 3.9,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_49.jpg"
+  },
+  {
+    "name": "Acer Laptop Model 50",
+    "category": "Laptop",
+    "price": 508,
+    "stock": 41,
+    "brand": "Acer",
+    "rating": 4.9,
+    "details": "High quality laptop from Acer with advanced features.",
+    "image": "https://example.com/acer_laptop_50.jpg"
+  },
+  {
+    "name": "Razer Accessories Model 51",
+    "category": "Accessories",
+    "price": 251,
+    "stock": 17,
+    "brand": "Razer",
+    "rating": 3.7,
+    "details": "High quality accessories from Razer with advanced features.",
+    "image": "https://example.com/razer_accessories_51.jpg"
+  },
+  {
+    "name": "Asus Laptop Model 52",
+    "category": "Laptop",
+    "price": 2482,
+    "stock": 42,
+    "brand": "Asus",
+    "rating": 4.0,
+    "details": "High quality laptop from Asus with advanced features.",
+    "image": "https://example.com/asus_laptop_52.jpg"
+  },
+  {
+    "name": "HP Laptop Model 53",
+    "category": "Laptop",
+    "price": 1924,
+    "stock": 20,
+    "brand": "HP",
+    "rating": 3.7,
+    "details": "High quality laptop from HP with advanced features.",
+    "image": "https://example.com/hp_laptop_53.jpg"
+  },
+  {
+    "name": "Sandisk Accessories Model 54",
+    "category": "Accessories",
+    "price": 964,
+    "stock": 13,
+    "brand": "Sandisk",
+    "rating": 4.1,
+    "details": "High quality accessories from Sandisk with advanced features.",
+    "image": "https://example.com/sandisk_accessories_54.jpg"
+  },
+  {
+    "name": "Oppo Phone Model 55",
+    "category": "Phone",
+    "price": 2396,
+    "stock": 50,
+    "brand": "Oppo",
+    "rating": 4.4,
+    "details": "High quality phone from Oppo with advanced features.",
+    "image": "https://example.com/oppo_phone_55.jpg"
+  },
+  {
+    "name": "OnePlus Phone Model 56",
+    "category": "Phone",
+    "price": 815,
+    "stock": 11,
+    "brand": "OnePlus",
+    "rating": 4.5,
+    "details": "High quality phone from OnePlus with advanced features.",
+    "image": "https://example.com/oneplus_phone_56.jpg"
+  },
+  {
+    "name": "Sony Accessories Model 57",
+    "category": "Accessories",
+    "price": 2298,
+    "stock": 46,
+    "brand": "Sony",
+    "rating": 3.5,
+    "details": "High quality accessories from Sony with advanced features.",
+    "image": "https://example.com/sony_accessories_57.jpg"
+  },
+  {
+    "name": "Apple Phone Model 58",
+    "category": "Phone",
+    "price": 960,
+    "stock": 28,
+    "brand": "Apple",
+    "rating": 3.9,
+    "details": "High quality phone from Apple with advanced features.",
+    "image": "https://example.com/apple_phone_58.jpg"
+  },
+  {
+    "name": "Dell Laptop Model 59",
+    "category": "Laptop",
+    "price": 609,
+    "stock": 33,
+    "brand": "Dell",
+    "rating": 4.6,
+    "details": "High quality laptop from Dell with advanced features.",
+    "image": "https://example.com/dell_laptop_59.jpg"
+  },
+  {
+    "name": "Samsung Phone Model 60",
+    "category": "Phone",
+    "price": 788,
+    "stock": 46,
+    "brand": "Samsung",
+    "rating": 4.5,
+    "details": "High quality phone from Samsung with advanced features.",
+    "image": "https://example.com/samsung_phone_60.jpg"
+  },
+  {
+    "name": "Fitbit Smart Watch Model 61",
+    "category": "Smart Watch",
+    "price": 1417,
+    "stock": 30,
+    "brand": "Fitbit",
+    "rating": 4.3,
+    "details": "High quality smart watch from Fitbit with advanced features.",
+    "image": "https://example.com/fitbit_smart watch_61.jpg"
+  },
+  {
+    "name": "Vivo Phone Model 62",
+    "category": "Phone",
+    "price": 1102,
+    "stock": 36,
+    "brand": "Vivo",
+    "rating": 3.5,
+    "details": "High quality phone from Vivo with advanced features.",
+    "image": "https://example.com/vivo_phone_62.jpg"
+  },
+  {
+    "name": "Sandisk Accessories Model 63",
+    "category": "Accessories",
+    "price": 1233,
+    "stock": 28,
+    "brand": "Sandisk",
+    "rating": 3.9,
+    "details": "High quality accessories from Sandisk with advanced features.",
+    "image": "https://example.com/sandisk_accessories_63.jpg"
+  },
+  {
+    "name": "Xiaomi Phone Model 64",
+    "category": "Phone",
+    "price": 1935,
+    "stock": 45,
+    "brand": "Xiaomi",
+    "rating": 4.2,
+    "details": "High quality phone from Xiaomi with advanced features.",
+    "image": "https://example.com/xiaomi_phone_64.jpg"
+  },
+  {
+    "name": "HP Laptop Model 65",
+    "category": "Laptop",
+    "price": 1250,
+    "stock": 10,
+    "brand": "HP",
+    "rating": 4.5,
+    "details": "High quality laptop from HP with advanced features.",
+    "image": "https://example.com/hp_laptop_65.jpg"
+  },
+  {
+    "name": "Lenovo Laptop Model 66",
+    "category": "Laptop",
+    "price": 922,
+    "stock": 38,
+    "brand": "Lenovo",
+    "rating": 4.5,
+    "details": "High quality laptop from Lenovo with advanced features.",
+    "image": "https://example.com/lenovo_laptop_66.jpg"
+  },
+  {
+    "name": "Oppo Phone Model 67",
+    "category": "Phone",
+    "price": 202,
+    "stock": 27,
+    "brand": "Oppo",
+    "rating": 4.8,
+    "details": "High quality phone from Oppo with advanced features.",
+    "image": "https://example.com/oppo_phone_67.jpg"
+  },
+  {
+    "name": "Acer Laptop Model 68",
+    "category": "Laptop",
+    "price": 1051,
+    "stock": 31,
+    "brand": "Acer",
+    "rating": 4.5,
+    "details": "High quality laptop from Acer with advanced features.",
+    "image": "https://example.com/acer_laptop_68.jpg"
+  },
+  {
+    "name": "Logitech Accessories Model 69",
+    "category": "Accessories",
+    "price": 557,
+    "stock": 46,
+    "brand": "Logitech",
+    "rating": 4.4,
+    "details": "High quality accessories from Logitech with advanced features.",
+    "image": "https://example.com/logitech_accessories_69.jpg"
+  },
+  {
+    "name": "Amazfit Smart Watch Model 70",
+    "category": "Smart Watch",
+    "price": 1435,
+    "stock": 49,
+    "brand": "Amazfit",
+    "rating": 4.3,
+    "details": "High quality smart watch from Amazfit with advanced features.",
+    "image": "https://example.com/amazfit_smart watch_70.jpg"
+  },
+  {
+    "name": "Samsung Phone Model 71",
+    "category": "Phone",
+    "price": 1239,
+    "stock": 27,
+    "brand": "Samsung",
+    "rating": 4.6,
+    "details": "High quality phone from Samsung with advanced features.",
+    "image": "https://example.com/samsung_phone_71.jpg"
+  },
+  {
+    "name": "Kingston Accessories Model 72",
+    "category": "Accessories",
+    "price": 435,
+    "stock": 16,
+    "brand": "Kingston",
+    "rating": 4.8,
+    "details": "High quality accessories from Kingston with advanced features.",
+    "image": "https://example.com/kingston_accessories_72.jpg"
+  },
+  {
+    "name": "Sony Accessories Model 73",
+    "category": "Accessories",
+    "price": 119,
+    "stock": 21,
+    "brand": "Sony",
+    "rating": 4.1,
+    "details": "High quality accessories from Sony with advanced features.",
+    "image": "https://example.com/sony_accessories_73.jpg"
+  },
+  {
+    "name": "Bose Accessories Model 74",
+    "category": "Accessories",
+    "price": 1338,
+    "stock": 23,
+    "brand": "Bose",
+    "rating": 3.9,
+    "details": "High quality accessories from Bose with advanced features.",
+    "image": "https://example.com/bose_accessories_74.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 75",
+    "category": "Laptop",
+    "price": 1685,
+    "stock": 25,
+    "brand": "Apple",
+    "rating": 3.6,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_75.jpg"
+  },
+  {
+    "name": "Apple Smart Watch Model 76",
+    "category": "Smart Watch",
+    "price": 1222,
+    "stock": 20,
+    "brand": "Apple",
+    "rating": 4.9,
+    "details": "High quality smart watch from Apple with advanced features.",
+    "image": "https://example.com/apple_smart watch_76.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 77",
+    "category": "Laptop",
+    "price": 1287,
+    "stock": 37,
+    "brand": "Apple",
+    "rating": 3.6,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_77.jpg"
+  },
+  {
+    "name": "Google Phone Model 78",
+    "category": "Phone",
+    "price": 879,
+    "stock": 18,
+    "brand": "Google",
+    "rating": 4.1,
+    "details": "High quality phone from Google with advanced features.",
+    "image": "https://example.com/google_phone_78.jpg"
+  },
+  {
+    "name": "Apple Laptop Model 79",
+    "category": "Laptop",
+    "price": 732,
+    "stock": 7,
+    "brand": "Apple",
+    "rating": 3.5,
+    "details": "High quality laptop from Apple with advanced features.",
+    "image": "https://example.com/apple_laptop_79.jpg"
+  },
+  {
+    "name": "Samsung Smart Watch Model 80",
+    "category": "Smart Watch",
+    "price": 2387,
+    "stock": 30,
+    "brand": "Samsung",
+    "rating": 3.8,
+    "details": "High quality smart watch from Samsung with advanced features.",
+    "image": "https://example.com/samsung_smart watch_80.jpg"
+  }
 ]

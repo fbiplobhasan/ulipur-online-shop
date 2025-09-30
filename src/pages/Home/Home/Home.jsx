@@ -4,14 +4,18 @@ import Products from '../../../components/CardSection/Products';
 import Reviews from '../../../components/Reviews/Reviews';
 import MovingSec from '../../../components/Maquee/MovingSec';
 import Featured from '../../../components/Featured/Featured';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+               <title>UOS | Home</title> 
+            </Helmet>
             <Banner></Banner>
             <Products></Products>
-            <Reviews></Reviews>
-            <Featured></Featured>
+            {/* <Reviews></Reviews>
+            <Featured></Featured> */}
             <MovingSec></MovingSec>
         </div>
     );
