@@ -6,29 +6,24 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        {" "}
         <NavLink to="/">HOME</NavLink>{" "}
       </li>
       <li>
-        {" "}
         <NavLink to="about">ABOUT</NavLink>{" "}
       </li>
       <li>
-        {" "}
         <NavLink to="dashboard">DASHBOARD</NavLink>{" "}
       </li>
       <li>
-        {" "}
         <NavLink to="product">PRODUCT</NavLink>{" "}
       </li>
       <li>
-        {" "}
         <NavLink to="contact">CONTACT</NavLink>{" "}
       </li>
     </>
   );
   return (
-    <div className="navbar fixed z-10 bg-black/30 text-white max-w-7xl">
+    <div className="navbar h-16 backdrop-blur fixed top-0 left-0 right-0 z-10 bg-blue-500/30 text-blue-500 max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

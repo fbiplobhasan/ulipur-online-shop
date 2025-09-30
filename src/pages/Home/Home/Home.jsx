@@ -12,7 +12,9 @@ const Home = () => {
             <Helmet>
                <title>UOS | Home</title> 
             </Helmet>
-            <Banner></Banner>
+            <div>
+                <Banner></Banner>
+            </div>
             <Products></Products>
             {/* <Reviews></Reviews>
             <Featured></Featured> */}
