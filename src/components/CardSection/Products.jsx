@@ -26,7 +26,6 @@ const Products = () => {
       );
       return data;
     },
-    keepPreviousData: true,
   });
 
   if (isLoading) return <p>Loading....</p>;
@@ -69,8 +68,11 @@ const Products = () => {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <Card key={index} product={product}></Card>
+          {products.map((p) => ( <Card 
+          key={p._id} 
+          p={p}>
+          </Card>
+            
           ))}
         </div>
       </div>
